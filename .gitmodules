@@ -1,0 +1,3 @@
+[submodule "Nimrod"]
+	path = Nimrod
+	url = https://github.com/Araq/Nimrod
