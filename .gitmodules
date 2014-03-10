@@ -1,3 +1,6 @@
 [submodule "Nimrod"]
 	path = Nimrod
 	url = https://github.com/Araq/Nimrod
+[submodule "babel"]
+	path = babel
+	url = https://github.com/zielmicha/babel

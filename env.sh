@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
-STABLE_VERSION=0.9.2
-MIRROR_URL=https://zielm.com/nimrod/packages
+STABLE_VERSION=0.9.3-pre-891c7f11
+MIRROR_URL=https://atomshare.net/nimrod/packages
 if [ "$NIMRODENV_MIRROR_URL" != "" ]; then
     MIRROR_URL=$NIMRODENV_MIRROR_URL
 fi
@@ -37,6 +37,8 @@ cp bin/nimrod ../bin
 [ -e ../lib ] || mv lib ../
 [ -e ../config ] || mv config ../
 cd ..
+sh $dir/postinstall.sh $dir
+
 rm -r $dir
 
 # Generate wrapper
