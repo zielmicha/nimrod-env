@@ -18,7 +18,8 @@ cd babel
 cd ../..
 
 nimrod c koch
-./koch csource
+./koch boot -d:release
+PATH="$PWD/bin:$PATH" ./koch csource
 
 cd csource_build
 
