@@ -23,5 +23,5 @@ version() {
 version "0.9.3-pre-891c7f11" 891c7f1167aee587db5fdd4c3b267c36de654816
 version "0.9.3-pre-a262a922" a262a922eaa892dc25d884ef53bc049ead02dc84
 
-cat index.head.html index.html.tmp > index.html
+cat index.head.html index.html.tmp index.foot.html > index.html
 rm index.html.tmp

@@ -5,6 +5,8 @@ Virtualenv for Nimrod.
 
 ```
 curl -f https://atomshare.net/nimrod/env.sh > env.sh && chmod +x env.sh
-./env.sh 0.9.3-pre-891c7f11
+./env.sh
+
 .nimrodenv/bin/nimrod c nameofprogramiwanttocompile
+.nimrodenv/bin/babel install nameofpackageiwanttoinstall
 ```
