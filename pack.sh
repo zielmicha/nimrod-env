@@ -10,6 +10,9 @@ git clean -x -f -d
 git checkout -- .
 git checkout "$1"
 
+echo "NIMROD=$1
+BABEL=$(cd ../babel; git rev-parse HEAD)" > "../packages/$2.info"
+
 mkdir csource_build
 cd csource_build
 mkdir babel
